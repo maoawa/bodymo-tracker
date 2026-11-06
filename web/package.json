@@ -1,0 +1,21 @@
+{
+  "name": "bodymo-web",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "deploy": "npm run build && wrangler pages deploy dist --project-name bodymo-web --branch main"
+  },
+  "dependencies": {
+    "vue": "^3.5.45",
+    "vue-router": "^5.4.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.10",
+    "vite": "^8.3.6",
+    "wrangler": "^4.158.0"
+  }
+}

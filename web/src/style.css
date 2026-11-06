@@ -1,0 +1,274 @@
+:root {
+  font-family:
+    Inter,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  color: #202b29;
+  background: #f5f5ee;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+button,
+input {
+  font: inherit;
+}
+button,
+a,
+input {
+  -webkit-tap-highlight-color: transparent;
+}
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: 3px solid #277a60;
+  outline-offset: 5px;
+}
+.shell {
+  max-width: 1160px;
+  margin: auto;
+  padding: 0 44px;
+}
+header {
+  min-height: 108px;
+  border-bottom: 1px solid #d7ddd3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.brand {
+  font-weight: 750;
+  font-size: 23px;
+  letter-spacing: -1px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+.brand-mark {
+  display: grid;
+  place-items: center;
+  background: #233e34;
+  color: #d4ef9e;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  font-size: 26px;
+}
+.brand-sub {
+  font-size: 14px;
+  color: #72796e;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+nav {
+  display: flex;
+  gap: 28px;
+  font-size: 14px;
+}
+nav a {
+  padding: 8px 0;
+  color: #697369;
+}
+nav a.router-link-exact-active {
+  color: #233e34;
+  border-bottom: 2px solid #233e34;
+}
+.hero {
+  padding: 76px 0 58px;
+  max-width: 790px;
+}
+.eyebrow {
+  font-size: 11px;
+  letter-spacing: 1.8px;
+  font-weight: 650;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+.dot {
+  width: 7px;
+  height: 7px;
+  background: #447e4f;
+  border-radius: 50%;
+}
+h1 {
+  font-size: clamp(42px, 6.2vw, 72px);
+  line-height: 1.07;
+  font-weight: 550;
+  letter-spacing: -3px;
+  margin: 27px 0;
+}
+h1 span {
+  color: #7b8870;
+}
+.intro {
+  max-width: 510px;
+  font-size: 17px;
+  line-height: 1.7;
+  color: #677063;
+  margin: 0 0 30px;
+}
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 36px;
+  background: #243f34;
+  color: #edf5e6;
+  border: 0;
+  border-radius: 7px;
+  padding: 15px 22px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.button:hover {
+  background: #365a49;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.card {
+  border: 1px solid #d8dfd1;
+  border-radius: 11px;
+  padding: 25px;
+  background: #fbfcf6;
+}
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #798472;
+  font-size: 12px;
+}
+.tag {
+  font-size: 9px;
+  letter-spacing: 1px;
+  background: #eaf0df;
+  border-radius: 20px;
+  padding: 6px 9px;
+  color: #536347;
+}
+h2 {
+  font-size: 24px;
+  letter-spacing: -0.5px;
+  font-weight: 550;
+  margin: 28px 0 12px;
+}
+.card p,
+.test-panel p {
+  color: #687462;
+  line-height: 1.6;
+  font-size: 14px;
+}
+.note {
+  font-size: 12px;
+  color: #798274;
+  line-height: 1.7;
+  margin: 24px 0 64px;
+}
+footer {
+  border-top: 1px solid #d7ddd3;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 26px 0;
+  font-size: 10px;
+  letter-spacing: 0.7px;
+  color: #798274;
+}
+.setup-hero {
+  padding-bottom: 25px;
+}
+.test-panel {
+  max-width: 720px;
+  background: #fbfcf6;
+  border: 1px solid #d8dfd1;
+  border-radius: 11px;
+  padding: 30px;
+}
+.test-panel h2 {
+  margin: 14px 0;
+}
+.check {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  margin: 28px 0;
+}
+.check input {
+  accent-color: #243f34;
+  width: 18px;
+  height: 18px;
+}
+.test-actions {
+  display: flex;
+  gap: 16px;
+}
+.secondary {
+  border: 1px solid #cbd4c5;
+  background: transparent;
+  padding: 12px 22px;
+  border-radius: 7px;
+  cursor: pointer;
+  color: #364a39;
+}
+.secondary:hover {
+  background: #eaf0df;
+}
+.result {
+  min-height: 24px;
+  margin-bottom: 0;
+}
+@media (max-width: 600px) {
+  .shell {
+    padding: 0 22px;
+  }
+  header {
+    min-height: 86px;
+  }
+  .brand-sub {
+    display: none;
+  }
+  nav {
+    gap: 18px;
+  }
+  .hero {
+    padding-top: 48px;
+  }
+  h1 {
+    letter-spacing: -2px;
+  }
+  .cards {
+    grid-template-columns: 1fr;
+  }
+  .card {
+    padding: 22px;
+  }
+  .card h2 {
+    margin-top: 20px;
+  }
+  footer {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .test-panel {
+    padding: 22px;
+  }
+}
