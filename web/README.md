@@ -46,9 +46,10 @@ Check builds in Cloudflare → Workers & Pages → bodymo-web → Deployments.
 - Intended custom domain: `bodymo.maao.cc`
 - Target DNS record: `CNAME bodymo → bodymo-web.pages.dev`
 
-The original Direct Upload project `bodymo` is retained as a fallback. Move the
-custom domain to `bodymo-web` only after verifying its first successful build,
-and update the existing CNAME to `bodymo-web.pages.dev`.
+The original Direct Upload project `bodymo` is retained as a fallback at
+`https://bodymo.pages.dev`. The new Git-connected project has passed its first
+Cloudflare build. Its custom-domain target is `bodymo.maao.cc`; the DNS CNAME
+must point to `bodymo-web.pages.dev` rather than the old `bodymo.pages.dev`.
 
 ### Optional manual deployment
 
